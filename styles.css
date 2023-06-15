@@ -1,0 +1,313 @@
+/* General Styles */
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  html, body, section {
+    block-size: 100%;
+  }
+  
+  
+  section {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Chivo', Arial, sans-serif; /* Updated font-family */
+  }
+  
+  .logo {
+    width: 5px;
+    height: 5px;
+    background-color: #fff; /* Placeholder color */
+    /* Add any additional styling for your logo */
+  }
+  
+/* Rest of the CSS code */
+
+header {
+    background-color: transparent;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    position: fixed; /* Add this line to make the header fixed */
+    top: 0; /* Add this line to position the header at the top */
+    width: 100%; /* Add this line to make the header full-width */
+    z-index: 999; /* Add this line to ensure the header is on top of other elements */
+  }
+  
+  .menu-buttons ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center; /* Change this line to center align the menu buttons horizontally */
+    align-items: center;
+    padding: 0;
+    margin: 0; /* Add this line to remove the default margin */
+  }
+  
+
+  .menu-buttons li {
+    margin: 10px;
+  }
+  
+  .menu-buttons a {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid  #84E4A8;
+    border-radius: 50px;
+    text-decoration: none;
+    color:  #84E4A8;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+  .menu-buttons a:hover {
+    background-color: #a6b4a6; /* Change the button color on hover (you can replace #a6b4a6 with your desired color) */
+  
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: flex-end; /* Change this line to move the icons to the right side */
+    align-items: center; /* Add this line to vertically align the icons */
+    position: fixed;
+    right: 10px; /* Adjust the value as needed */
+    top: 28px; /* Adjust the value as needed */
+  }
+  
+  .contact-icons a {
+    display: inline-block;
+    margin: 0 15px; /* Adjust the horizontal margin as needed */
+    color: #84E4A8;
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+.contact-icons a:hover {
+  color: #a6b4a6; /* Change the icon color on hover (you can replace #a6b4a6 with your desired color) */
+} 
+
+
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Home Section Styles */
+  #home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #526D82;
+    text-align: center;
+  }
+  
+  #home h2 {
+    font-size: 100px;
+    color: #ADCBDD;
+    animation: typewriter 3s steps(12) 1s infinite;
+  }
+  
+  /* Home Section Styles */
+  #home p {
+    font-size: 24px;
+    color: #fff;
+    margin-top: 20px;
+  }
+  
+  .learn-more-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:  #84E4A8;
+    color: #333;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .learn-more-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* Get Involved Section Styles */
+  #get-involved {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #526D82;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .get-involved-section {
+    text-align: left; /* Move the text to the left */
+  }
+  
+  .get-involved-section h2 {
+    font-size: 36px; /* Increase the font size */
+    margin-bottom: 10px; /* Add some bottom margin for spacing */
+  }
+  
+  .get-involved-section p {
+    font-size: 18px; /* Increase the font size */
+    line-height: 1.5; /* Add line height for better readability */
+  }
+  .get-involved-section ul {
+    font-size: 18px; /* Increase the font size */
+    line-height: 1.5; /* Add line height for better readability */
+  }
+  
+#aboutus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #526D82;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  .about-section {
+    text-align: left; /* Move the text to the left */
+  }
+  
+  .about-section h2 {
+    font-size: 36px; /* Increase the font size */
+    margin-bottom: 10px; /* Add some bottom margin for spacing */
+  }
+  
+  .about-section p {
+    font-size: 18px; /* Increase the font size */
+    line-height: 1.5; /* Add line height for better readability */
+  }
+  .about-section ul{
+    font-size: 18px; /* Increase the font size */
+    line-height: 1.5; /* Add line height for better readability */
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  #team {
+    height: 100vh;
+    background-color: #526D82;
+    text-align: center;
+  }
+
+  #team h2{
+    color: #fff;
+  }
+
+  .team-member {
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
+  }
+  
+  .team-member img {
+    max-width: 200px;
+  }
+  
+  #cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background-color: #333;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+  }
+  
+ /* Existing CSS code */
+  .member-box {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .member-box:hover {
+    background-color: #bec4c7;
+    transition: background-color 0.5s ease;
+  }
+  
+  .member-photo {
+    border: 5px solid #84E4A8;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .member-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .member-details {
+    margin-top: 10px;
+  }
+  
+  .member-details h3 {
+    margin: 0;
+  }
+  
+  .member-details p {
+    margin: 5px 0;
+  }
+  
+  .social-icons {
+    margin-top: 10px;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin: 0 5px;
+    color: #84E4A8;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .social-icons a:hover {
+    color: #a6b4a6;
+  }
+  
+  
